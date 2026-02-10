@@ -1,0 +1,50 @@
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center; 
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    border: 1px solid #fff;
+    border-radius: 11px;
+    padding: 1rem 1.2rem;
+    transition-duration: .7s;
+    text-align: center;
+}
+
+.login-Name-container,
+.login-senha-container,
+.login-email-container {
+    text-align: left;
+    padding: .62rem 1.9rem;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-Name-container label,
+.login-senha-container label,
+.login-email-container label {
+    margin: 10px 10px; 
+}
+
+#name,
+#confirm-password {
+    padding: .8rem;
+    background-color: transparent;
+    border: 1px solid green;
+    border-radius: 11px;
+    color: #fff;
+    margin-left: 8px;
+}
+#back-to-login {
+    text-align: left;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,0 +1,57 @@
+.login-container h1 {
+    margin-bottom: 30px;
+}
+
+
+.login-email-container,
+.login-senha-container {
+    text-align: left;
+    padding: .62rem 1.9rem;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#email,
+#senha,
+.enjoy-btn {
+    padding: .8rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 11px;
+    color: #fff;
+    margin-left: 8px;
+}
+
+.enjoy-btn {
+    width: 50%;
+    margin: 20px;
+}
+
+.check-information-container p {
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.check-information-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.check-information-container {
+    margin-bottom: 20px
+}
+
+
+/* responsive area */
+
+@media screen and (max-width: 400px) {
+    form {
+
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+}

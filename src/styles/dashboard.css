@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.header-container {
+    background-color: transparent;
+    display: flex;
+    width: 100vw;
+    padding: 2rem;
+
+    transition: all .6s ease;
+    overflow: hidden;
+}
+
+.header-container:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: gold;
+
+}
+
+.meeting-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 120px;
+    padding: .5rem 1.5rem;
+    gap: 2rem;
+}
+
+.meeting-container h2 {
+    padding: 1.3rem;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+#search {
+    padding: 0.8rem 1rem;
+    height: auto;
+    width: 300px;
+    margin-left: 80px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    transition: all .6s ease;
+    color: gold;
+}
+
+#search:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: gold;
+}
+
+#portfolio {
+    text-decoration: none;
+    color: #fff;
+    transition: all .6s ease;
+}
+
+#portfolio:hover {
+    cursor: pointer;
+    color: gold;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.template-dashboard,
+.follow-up-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+
+
+
+}
+.follow-up-container {
+    margin:  50px auto ;
+}
+
+.overview-section,
+.performace-container,
+.Social-trafic-container {
+    width: 100%;
+    background-color: transparent;
+    min-height: 250px;
+    margin: 0px 20px;
+    border: 1px solid transparent;
+    border-radius: 11px;
+    transition: all .6s ease;
+    padding: 20px;
+    border-color: gold;
+    ;
+
+
+
+
+}
+
+.performace-container:hover {
+    background: url("../features/dashboard/imgDashboards/performance.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+    border-color: gold;
+}
+
+.Social-trafic-container:hover {
+    background: url("../features/dashboard/imgDashboards/traficSocial.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+    border-color: gold;
+}
+
+#new-user:hover {
+    background: url("../features/dashboard/imgDashboards/newUser.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+    border-color: gold;
+}
+
+#sales:hover {
+    background: url("../features/dashboard/imgDashboards/sales.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+    border-color: gold;
+}
+
+#trafic:hover {
+    background: url("../features/dashboard/imgDashboards/traffic.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+    border-color: gold;
+}
+
+.overview-section:hover {
+    background: url("../features/dashboard/imgDashboards/overview.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+    border-color: gold;
+}
+
+.template-folow-up {
+    width: 100%;
+    background-color: transparent;
+    min-height: 250px;
+    margin: 0px 20px;
+    border: 1px solid transparent;
+    border-radius: 11px;
+    transition: all .6s ease;
+    padding: 20px;
+    border-color: gold;
+}
+
+.overview-section:hover,
+.performace-container:hover,
+.Social-trafic-container:hover,
+.template-folow-up:hover {
+    border-color: gold;
+    cursor: pointer;
+}
+
+#logout-btn {
+    padding: 1.2rem;
+    height: 0px;
+    color: #fff;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 11px;
+    transition: all .6s ease;
+}
+
+#logout-btn:hover {
+    border-color: gold;
+    cursor: pointer;
+    color: gold;
+    text-align: center;
+}
+
+.link-pages {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Ressponsive are */
+
+@media screen and (max-width: 800px) {
+
+
+    .meeting-container h2 {
+        font-size: 1rem;
+    }
+
+    .meeting-container a {
+        display: none;
+    }
+
+    #search {
+        width: 160px;
+    }
+
+    .template-dashboard,
+    .follow-up-container {
+        display: grid;
+        margin: 50px auto;
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .overview-section,
+    .performace-container,
+    .Social-trafic-container {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+
+
+    .header-container, .meeting-container {
+        padding: 0;
+        text-align: center;
+    }
+
+    .meeting-container h2 {
+        font-size: 1rem;
+    }
+
+    .meeting-container a {
+        display: none;
+    }
+
+   #search {
+    width: 150px;
+   }
+    .template-dashboard,
+    .follow-up-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto; 
+        
+    }
+
+    .overview-section,
+    .performace-container,
+    .Social-trafic-container {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+}

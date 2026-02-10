@@ -1,0 +1,39 @@
+body {
+    margin: 20px auto 0;
+}
+
+header {
+    margin: 0 auto 50px;
+}
+.nav-links {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: all .6s ease;
+    margin: 20px auto;
+    padding: 1.2rem;
+    border-radius: 11px;
+}
+.nav-links:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+
+#template-container {
+    min-height: 350px;
+    min-width: 400px;
+    border: 1px solid #fff;
+    border-radius: 11px;
+    margin: 50px auto;
+}
+
+footer {
+    text-align: center;
+    margin: 50px;
+    height: 300px;
+}
+#portfolio {
+    color: #fff; 
+    text-decoration: none;
+}
